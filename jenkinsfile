@@ -5,7 +5,7 @@ pipeline {
           stage("build & SonarQube Scanner") {
             agent any
  tools {
-               
+               jdk 'jdk17'
                 maven 'maven3'
             }
             steps {
